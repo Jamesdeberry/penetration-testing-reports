@@ -1,6 +1,6 @@
 🛡️ Penetration-testing-reports
 
-A collection of penetration testing reports demonstrating exploitation of Linux, web, and Windows environments.
+A collection of penetration testing reports demonstrating real-world attack paths from initial access to full system compromise across multiple environments.
 
 🔥 Penetration Testing Portfolio – James DeBerry
 Overview
@@ -9,48 +9,35 @@ This repository contains penetration testing reports demonstrating real-world at
 
 Each assessment follows a structured penetration testing methodology:
 
-Enumeration
-Vulnerability Identification
-Exploitation
-Privilege Escalation
-Post-Exploitation
-Remediation
+- Enumeration  
+- Vulnerability Identification  
+- Exploitation  
+- Privilege Escalation  
+- Post-Exploitation  
+- Remediation  
 
 These reports showcase the ability to identify vulnerabilities, chain exploits, and achieve full system compromise.
 
 📂 Reports
 
-🔵 Blue (Windows Exploitation)
-Exploited MS17-010 (EternalBlue)
-Achieved SYSTEM-level access
-Demonstrated unauthenticated remote code execution
-Retrieved all system flags
+🔵 [Blue (Windows Exploitation)](./Blue-Pentest-Report.pdf)
+- Exploited MS17-010 (EternalBlue)
+- Achieved SYSTEM-level access
 
-🟣 Relevant (Windows Exploitation)
-Enumerated SMB services and discovered valid credentials
-Identified writable SMB share exposed via web server
-Uploaded malicious ASPX payload for remote code execution
-Escalated privileges using SeImpersonatePrivilege (PrintSpoofer)
-Achieved SYSTEM-level access
+🟣 [Relevant (Windows Exploitation)](./Relevant-Pentest-Report.pdf)
+- SMB credential discovery → writable share → RCE
+- Privilege escalation via PrintSpoofer
+- SYSTEM-level compromise
 
-🔴 Steel Mountain (Windows Exploitation)
-Identified vulnerable web service (Rejetto HFS)
-Exploited remote command execution vulnerability
-Gained initial shell access
-Escalated privileges via service misconfiguration
-Achieved full system compromise
+🔴 [Steel Mountain (Windows Exploitation)](./Steel-Mountain-Pentest-Report.pdf)
+- Exploited Rejetto HFS
+- Gained initial access → privesc → full compromise
 
-🟦 Kenobi (Linux Exploitation)
-Enumerated SMB and NFS services
-Exploited misconfigured file shares
-Leveraged SSH key exposure for access
-Escalated privileges to root
+🟦 [Kenobi (Linux Exploitation)](./Kenobi-Pentest-Report.pdf)
+- SMB/NFS enumeration → SSH key abuse → root
 
-🟩 CTF (Web Exploitation)
-Identified SQL Injection vulnerability
-Bypassed authentication mechanisms
-Gained administrative access
-Achieved system-level compromise
+🟩 [Simple CTF (Web Exploitation)](./Ctf-Pentest-Report.pdf)
+- SQL injection → auth bypass → system access
 
 🧠 Skills Demonstrated
 Network Enumeration (Nmap, SMB, RPC, NFS)
