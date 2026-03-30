@@ -1,4 +1,4 @@
-🛡️ penetration-testing-reports
+🛡️ Penetration-testing-reports
 
 A collection of penetration testing reports demonstrating exploitation of Linux, web, and Windows environments.
 
@@ -19,12 +19,12 @@ Remediation
 These reports showcase the ability to identify vulnerabilities, chain exploits, and achieve full system compromise.
 
 📂 Reports
+
 🔵 Blue (Windows Exploitation)
 Exploited MS17-010 (EternalBlue)
 Achieved SYSTEM-level access
 Demonstrated unauthenticated remote code execution
 Retrieved all system flags
-
 
 🟣 Relevant (Windows Exploitation)
 Enumerated SMB services and discovered valid credentials
@@ -33,7 +33,6 @@ Uploaded malicious ASPX payload for remote code execution
 Escalated privileges using SeImpersonatePrivilege (PrintSpoofer)
 Achieved SYSTEM-level access
 
-
 🔴 Steel Mountain (Windows Exploitation)
 Identified vulnerable web service (Rejetto HFS)
 Exploited remote command execution vulnerability
@@ -41,20 +40,17 @@ Gained initial shell access
 Escalated privileges via service misconfiguration
 Achieved full system compromise
 
-
 🟦 Kenobi (Linux Exploitation)
 Enumerated SMB and NFS services
 Exploited misconfigured file shares
 Leveraged SSH key exposure for access
 Escalated privileges to root
 
-
-🟩 Simple CTF (Web Exploitation)
+🟩 CTF (Web Exploitation)
 Identified SQL Injection vulnerability
 Bypassed authentication mechanisms
 Gained administrative access
 Achieved system-level compromise
-
 
 🧠 Skills Demonstrated
 Network Enumeration (Nmap, SMB, RPC, NFS)
